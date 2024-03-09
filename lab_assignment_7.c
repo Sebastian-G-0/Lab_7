@@ -39,19 +39,25 @@ int main() {
     int array1_selection[] = {97, 16, 45, 63, 13, 22, 7, 58, 72};
     int array2_bubble[] = {90, 80, 70, 60, 50, 40, 30, 20, 10};
     int array2_selection[] = {90, 80, 70, 60, 50, 40, 30, 20, 10};
+    
     int n1 = sizeof(array1_bubble)/sizeof(array1_bubble[0]);
     int n2 = sizeof(array2_bubble)/sizeof(array2_bubble[0]);
+    
     int count1_bubble[100] = {0};
     int count1_selection[100] = {0};
+    
     int count2_bubble[100] = {0};
     int count2_selection[100] = {0};
+    
     int swap_count1_bubble = 0;
     int swap_count1_selection = 0;
+    
     int swap_count2_bubble = 0;
     int swap_count2_selection = 0;
 
     bubbleSort(array1_bubble, n1, count1_bubble, &swap_count1_bubble);
     selectionSort(array1_selection, n1, count1_selection, &swap_count1_selection);
+    
     bubbleSort(array2_bubble, n2, count2_bubble, &swap_count2_bubble);
     selectionSort(array2_selection, n2, count2_selection, &swap_count2_selection);
 
